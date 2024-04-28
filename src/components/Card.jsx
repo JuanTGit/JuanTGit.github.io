@@ -1,4 +1,4 @@
-import ProfilePic from "./assets/profile-pic.jpg"
+import ProfilePic from "../assets/profile-pic.jpg"
 import Button from "./Button";
 
 function Card(props){
