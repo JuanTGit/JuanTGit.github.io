@@ -26,3 +26,11 @@
   font-family: Arial, sans-serif;
   color: hsla(0, 0%, 30%);
 }
+
+.color-display{
+  border: 2px solid;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+
+}
