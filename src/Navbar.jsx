@@ -14,8 +14,8 @@ function AppNavbar() {
 
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
-            <Container>
-                <Navbar.Brand className="d-flex" id="custom-nav-title" href="/">Juan Tejeda</Navbar.Brand>
+            <Container className='p-0'>
+                <Navbar.Brand id="custom-nav-title" href="/">Juan Tejeda</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto text-center">

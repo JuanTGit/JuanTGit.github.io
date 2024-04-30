@@ -38,6 +38,7 @@
 
 body{
   background-color: hsl(0, 0%, 80%);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -63,13 +64,13 @@ body{
   padding: 10px; /* Adjust padding to change the circle size */
   border-radius: 10px; /* Makes the background or border circular */
   text-decoration: none; /* Ensures no underline by default */
-  transition: background-color 0.5s, color 0.3s; /* Smooth transition for hover effects */
+  transition: background-color 0.5s, color 0.3s; /*Smooth transition for hover effects */
   font-size: 1.2rem;
   color: black;
 }
 
 #custom-nav-link:hover {
-  background-color: #6617c7a7;
-  color: #fff; /* White text color on hover */
+  background-color: #30baa3;
+  color: #fff;
   text-decoration: underline;
 }
