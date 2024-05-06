@@ -12,6 +12,7 @@ import {
 
 function AppNavbar() {
     const [scrolled, setScrolled] = useState(false);
+    const [expanded, setExpanded] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,17 +23,23 @@ function AppNavbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const closeNavbar = () => {
+        setTimeout(() => {
+            setExpanded(false);
+        }, 175);
+    }
+
     return (
-        <Navbar expand="lg" sticky='top' className={`${scrolled ? 'navbar-scrolled' : ''}`}>
+        <Navbar expand="lg" sticky='top' className={`${scrolled ? 'navbar-scrolled' : ''}`} expanded={expanded} onToggle={() => setExpanded(!expanded)}>
             <Container className='p-0'>
                 <Navbar.Brand id="custom-nav-title" href="/">Juan Tejeda</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto text-center">
-                        <Nav.Link className="mx-2" id="custom-nav-link" href="#/"><BsHouseDoor style={{ marginBottom: "4px", marginRight: "4px" }} />Home</Nav.Link>
-                        <Nav.Link className="mx-2" id="custom-nav-link" href="#/projects"><BsGear style={{ marginBottom: "4px", marginRight: "4px" }} />Projects</Nav.Link>
-                        <Nav.Link className="mx-2" id="custom-nav-link" href="#/"><BsEnvelope style={{ marginBottom: "4px", marginRight: "4px" }} />Contact</Nav.Link>
-                        <Nav.Link className="mx-2" id="custom-nav-link" href="#/resume"><BsFileText style={{ marginBottom: "4px", marginRight: "4px" }} />Resume</Nav.Link>
+                        <Nav.Link className="mx-2" id="custom-nav-link" onClick={closeNavbar} href="#/"><BsHouseDoor style={{ marginBottom: "4px", marginRight: "4px" }} />Home</Nav.Link>
+                        <Nav.Link className="mx-2" id="custom-nav-link" onClick={closeNavbar} href="#/projects"><BsGear style={{ marginBottom: "4px", marginRight: "4px" }} />Projects</Nav.Link>
+                        <Nav.Link className="mx-2" id="custom-nav-link" onClick={closeNavbar} href="#/"><BsEnvelope style={{ marginBottom: "4px", marginRight: "4px" }} />Contact</Nav.Link>
+                        <Nav.Link className="mx-2" id="custom-nav-link" onClick={closeNavbar} href="#/resume"><BsFileText style={{ marginBottom: "4px", marginRight: "4px" }} />Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
