@@ -4,7 +4,7 @@ function Resume(){
     return(
         <div>
             <div className="container d-flex justify-content-center">
-                <img className="col-lg-8" src={resume} alt="" />
+                <img className="col-12" src={resume} alt="" />
             </div>
         </div>
     );
