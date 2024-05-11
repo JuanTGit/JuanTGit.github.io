@@ -13,7 +13,7 @@ function Home(){
                 "technology and never running out of new things to",
                 "discover, drives my excitement and passion for web",
                 "development. When I’m not at my computer I like to",
-                "spend my time reading, keeping fit and playing guitar."];
+                "spend my time reading, keeping fit and fishing."];
 
     const speed = 35;
 
