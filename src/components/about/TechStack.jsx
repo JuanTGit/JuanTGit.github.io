@@ -1,18 +1,20 @@
-import { Col, Row} from "react-bootstrap"
+import { Col, Row } from "react-bootstrap"
 import {
-	DiJavascript1,
 	DiReact,
 	DiNodejs,
 	DiPython,
-	DiGit
+	DiGit,
+	DiHtml5,
+	DiCss3,
+	DiPostgresql
   } from "react-icons/di";
-import { SiPostgresql, SiFlask } from "react-icons/si";
+  import { BiLogoFlask, BiLogoJavascript } from "react-icons/bi";
 
 function TechStack(){
 	return(
 		<Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
 			<Col xs={4} md={2} className="card-icons">
-				<DiJavascript1 />
+				<BiLogoJavascript />
 			</Col>
 			<Col xs={4} md={2} className="card-icons">
 				<DiNodejs />
@@ -21,16 +23,22 @@ function TechStack(){
 				<DiReact />
 			</Col>
 			<Col xs={4} md={2} className="card-icons">
+				<DiHtml5 />
+			</Col>
+			<Col xs={4} md={2} className="card-icons">
+				<DiCss3 />
+			</Col>
+			<Col xs={4} md={2} className="card-icons">
 				<DiGit />
 			</Col>
 			<Col xs={4} md={2} className="card-icons">
-				<SiPostgresql />
+				<DiPostgresql />
 			</Col>
 			<Col xs={4} md={2} className="card-icons">
 				<DiPython />
 			</Col>
 			<Col xs={4} md={2} className="card-icons">
-				<SiFlask />
+				<BiLogoFlask />
 			</Col>
 	  	</Row>
 	)

@@ -51,6 +51,7 @@ function Home(){
                 <div className="col-md-5 col-sm-12 mt-4 d-flex justify-content-center">
                     <Lottie id="lottie" loop={false} animationData={animationData} />
                 </div>
+                {/* Techstack */}
                 <div className="row">
                     <div className="col-12">
                         <h1 className="text-center">Technologies</h1>

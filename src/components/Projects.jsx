@@ -1,5 +1,14 @@
 import osrsImg from "../assets/osrs-api.png"
 import ecomImg from "../assets/ecommerce.png"
+import {
+	DiReact,
+	DiNodejs,
+	DiPython,
+	DiGit,
+    DiHtml5,
+    DiPostgresql 
+  } from "react-icons/di";
+import { BiLogoFlask, BiLogoJavascript } from "react-icons/bi";
 
 function Projects(){
     const openInNewTab = (url) => {
@@ -18,7 +27,18 @@ function Projects(){
                 </div>
                 {/* txt */}
                 <div className="col-12 col-sm-6 mt-5"  id="project-card">
-                    <h1 className="text-left">Ecommerce Store</h1>
+                    <h1 className="">Ecommerce Store</h1>
+                    <ul className="list-inline">
+                        <li className="list-inline-item project-icon">
+                            <DiPython />
+                        </li>
+                        <li className="list-inline-item project-icon">
+                            <BiLogoFlask />
+                        </li>
+                        <li className="list-inline-item project-icon">
+                            <DiPostgresql />
+                        </li>
+                    </ul>
                     <ul className="list-inline">
                         <li className="list-inline-item">
                             <a className="btn btn-primary" onClick={() => openInNewTab("https://flask-setup.onrender.com")}>Live Site</a>
@@ -39,6 +59,14 @@ function Projects(){
                 {/* txt */}
                 <div className="col-12 col-sm-6 mt-5" id="project-card">
                     <h1 className="text-left">OSRS API</h1>
+                    <ul className="list-inline">
+                        <li className="list-inline-item project-icon">
+                            <BiLogoJavascript />
+                        </li>
+                        <li className="list-inline-item project-icon">
+                            <DiHtml5 />
+                        </li>
+                    </ul>
                     <ul className="list-inline">
                         <li className="list-inline-item">
                             <a className="btn btn-primary" onClick={() => openInNewTab("https://osrs-ge-api.onrender.com")}>Live Site</a>
