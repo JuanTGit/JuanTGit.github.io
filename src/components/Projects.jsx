@@ -27,17 +27,11 @@ function Projects(){
                 </div>
                 {/* txt */}
                 <div className="col-12 col-sm-6 mt-5"  id="project-card">
-                    <h1 className="">Ecommerce Store</h1>
+                    <h1>Ecommerce Store</h1>
                     <ul className="list-inline">
-                        <li className="list-inline-item project-icon">
-                            <DiPython />
-                        </li>
-                        <li className="list-inline-item project-icon">
-                            <BiLogoFlask />
-                        </li>
-                        <li className="list-inline-item project-icon">
-                            <DiPostgresql />
-                        </li>
+                        <li className="list-inline-item project-icon"><DiPython /></li>
+                        <li className="list-inline-item project-icon"><BiLogoFlask /></li>
+                        <li className="list-inline-item project-icon"><DiPostgresql /></li>
                     </ul>
                     <ul className="list-inline">
                         <li className="list-inline-item">
@@ -58,7 +52,7 @@ function Projects(){
                 </div>
                 {/* txt */}
                 <div className="col-12 col-sm-6 mt-5" id="project-card">
-                    <h1 className="text-left">OSRS API</h1>
+                    <h1>OSRS API</h1>
                     <ul className="list-inline">
                         <li className="list-inline-item project-icon">
                             <BiLogoJavascript />
