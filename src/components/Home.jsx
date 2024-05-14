@@ -48,7 +48,7 @@ function Home(){
                     <h5 dangerouslySetInnerHTML={{__html: textDisplay}}></h5>
                 </div>
                 {/* Image */}
-                <div className="col-md-5 col-sm-12 mt-4">
+                <div className="col-md-5 col-sm-12 mt-4 d-flex justify-content-center">
                     <Lottie id="lottie" loop={false} animationData={animationData} />
                 </div>
                 <div className="row">
