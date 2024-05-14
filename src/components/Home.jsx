@@ -1,6 +1,7 @@
 import Lottie from "lottie-react"
 import animationData from "../assets/developer.json"
 import { useEffect, useState } from "react";
+import TechStack from "./about/TechStack";
 
 function Home(){
     const [currentStringIndex, setCurrentStringIndex] = useState(0);
@@ -39,15 +40,25 @@ function Home(){
     return (
         <div className="container">
             <div className="row">
-            <div className="col-md-7 col-sm-12 mt-5">
-                <h1 className="text-start">Software Engineer</h1>
-                <h3 className="text-start">Houston, TX</h3>
-                <br />
-                <h5 dangerouslySetInnerHTML={{__html: textDisplay}}></h5>
-            </div>
-            <div className="col-md-5 col-sm-12 mt-5">
-                <Lottie loop={false} animationData={animationData} />
-            </div>
+                {/* About */}
+                <div className="col-md-7 col-sm-12 mt-5">
+                    <h1 className="text-start">Software Engineer</h1>
+                    <h3 className="text-start">Houston, TX</h3>
+                    <br />
+                    <h5 dangerouslySetInnerHTML={{__html: textDisplay}}></h5>
+                </div>
+                {/* Image */}
+                <div className="col-md-5 col-sm-12 mt-4">
+                    <Lottie id="lottie" loop={false} animationData={animationData} />
+                </div>
+                <div className="row">
+                    <div className="col-12">
+                        <h1 className="text-center">Technologies</h1>
+                    </div>
+                    <div className="col-12">
+                        <TechStack />
+                    </div>
+                </div>
             </div>
         </div>
     );

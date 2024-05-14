@@ -9,7 +9,7 @@ function Projects(){
 
     return(
         <div className="container">
-            <h1 className="text-left mt-5">Projects</h1>
+            <h1 className="text-center mt-5" id="project-title">Projects</h1>
             {/* Ecommerce Project */}
             <div className="row mt-5">
                 {/* img */}
@@ -19,7 +19,14 @@ function Projects(){
                 {/* txt */}
                 <div className="col-12 col-sm-6 mt-5"  id="project-card">
                     <h1 className="text-left">Ecommerce Store</h1>
-                    <a className="btn btn-primary" onClick={() => openInNewTab("https://flask-setup.onrender.com")}>Visit Site</a>
+                    <ul className="list-inline">
+                        <li className="list-inline-item">
+                            <a className="btn btn-primary" onClick={() => openInNewTab("https://flask-setup.onrender.com")}>Live Site</a>
+                        </li>
+                        <li className="list-inline-item">
+                            <a className="btn btn-primary" onClick={() => openInNewTab("https://github.com/JuanTGit/flask_setup")}>GitHub</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -32,7 +39,14 @@ function Projects(){
                 {/* txt */}
                 <div className="col-12 col-sm-6 mt-5" id="project-card">
                     <h1 className="text-left">OSRS API</h1>
-                    <a className="btn btn-primary" onClick={() => openInNewTab("https://osrs-ge-api.onrender.com")}>Visit Site</a>
+                    <ul className="list-inline">
+                        <li className="list-inline-item">
+                            <a className="btn btn-primary" onClick={() => openInNewTab("https://osrs-ge-api.onrender.com")}>Live Site</a>
+                        </li>
+                        <li className="list-inline-item">
+                            <a className="btn btn-primary" onClick={() => openInNewTab("https://github.com/JuanTGit/osrs-ge-api")}>GitHub</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
