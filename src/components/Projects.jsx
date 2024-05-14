@@ -30,8 +30,8 @@ function Projects(){
                     <img id="project-img" src={osrsImg} alt="Ecom Project" />
                 </div>
                 {/* txt */}
-                <div className="col-12 col-sm-6" id="project-card">
-                    <h1 className="text-left mt-5">OSRS API</h1>
+                <div className="col-12 col-sm-6 mt-5" id="project-card">
+                    <h1 className="text-left">OSRS API</h1>
                     <a className="btn btn-primary" onClick={() => openInNewTab("https://osrs-ge-api.onrender.com")}>Visit Site</a>
                 </div>
             </div>
