@@ -8,12 +8,20 @@
   max-width: 250px;
   display: inline-block;
 } */
-@media (max-width: 576px) { /* Adjust the max-width based on your specific breakpoint needs */
+@media (max-width: 576px) {
   #project-card {
-      display: block; /* Ensures the div behaves as a block-level element */
+      display: block;
       margin-left: auto;
       margin-right: auto;
-      text-align: center; /* Centers the text and inline elements within the div */
+      text-align: center;
+  }
+  .form-btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .form-btn button{
+    width: 100%;
   }
 }
 
@@ -46,10 +54,9 @@
 
 }
 
-
 body {
   background-color: hsl(0, 0%, 80%);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
   background-image: url('./assets/background.jpg');
   background-size: cover;       /* Cover the entire screen */
   background-position: center;  /* Center the background image */
@@ -80,9 +87,8 @@ body {
 #custom-nav-link {
   display: inline-block; /* Allows padding to affect the shape */
   padding: 10px; /* Adjust padding to change the circle size */
-  border-radius: 10px; /* Makes the background or border circular */
-  text-decoration: none; /* Ensures no underline by default */
-  transition: background-color 0.5s, color 0.3s; /*Smooth transition for hover effects */
+  border-radius: 8px;
+  transition: background-color 0.5s, color 0.3s;
   font-size: 1.2rem;
   color: black;
 }
@@ -106,6 +112,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: hsl(0, 0%, 80%);
+  opacity: 98%;
   z-index: -1;
 }
 /* Home */
@@ -135,6 +142,19 @@ body {
   
 }
 
+/* Contact */
+.form-group {
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+  background: white;
+  border-radius: 5px;
+  padding: 2rem;
+  max-width: 50rem;
+  margin-top: 1rem;
+  width: 95%;
+  margin: 2rem auto 0 auto
+}
 /* .card-icons{
   font-size: 4.5em;
   margin: 15px;

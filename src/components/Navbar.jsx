@@ -38,7 +38,7 @@ function AppNavbar() {
                     <Nav className="ms-auto text-center">
                         <Nav.Link className="mx-2" id="custom-nav-link" onClick={closeNavbar} href="#/"><BsHouseDoor style={{ marginBottom: "4px", marginRight: "4px" }} />Home</Nav.Link>
                         <Nav.Link className="mx-2" id="custom-nav-link" onClick={closeNavbar} href="#/projects"><BsGear style={{ marginBottom: "4px", marginRight: "4px" }} />Projects</Nav.Link>
-                        <Nav.Link className="mx-2" id="custom-nav-link" onClick={closeNavbar} href="#/"><BsEnvelope style={{ marginBottom: "4px", marginRight: "4px" }} />Contact</Nav.Link>
+                        <Nav.Link className="mx-2" id="custom-nav-link" onClick={closeNavbar} href="#/contact"><BsEnvelope style={{ marginBottom: "4px", marginRight: "4px" }} />Contact</Nav.Link>
                         <Nav.Link className="mx-2" id="custom-nav-link" onClick={closeNavbar} href="#/resume"><BsFileText style={{ marginBottom: "4px", marginRight: "4px" }} />Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
