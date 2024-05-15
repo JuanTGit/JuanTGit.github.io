@@ -43,7 +43,7 @@ function Home(){
         <div className="container">
             <div className="row">
                 {/* About */}
-                <div className="col-md-7 col-sm-12 mt-5">
+                <div className="col-md-7 col-sm-12 mt-5" id="homepage-intro-text">
                     {displayedTexts.map((text, index) => {
                         switch (index) {
                         case 0:
