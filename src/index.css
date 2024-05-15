@@ -129,6 +129,7 @@ body {
   height: auto;
   max-width: 80%;
 }
+
 /* Project */
 #project-title{
   font-weight: bold;
@@ -140,9 +141,12 @@ body {
   height: auto;
 }
 
-#project-card:hover{
-  border: 2px solid #30baa3;
-  border-radius: 5px;
+#project-card{
+  display: block;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+  padding: 2rem;
 }
 
 .project-icon{
@@ -177,7 +181,7 @@ body {
   transition: background-color 0.5s, color 0.3s;
   background-color: white;
   margin: 8px;
-  border: 2.2px solid #30baa334;
+  border: 2.2px solid #30baa3a2;
   box-shadow: 4px 5px 4px 3px #075c4223;
   color: rgb(26, 25, 25);
 }
@@ -186,5 +190,5 @@ body {
   overflow: hidden;
   border: 2.2px solid #30baa3cc;
   cursor: pointer;
-  color: #30baa3;
+  color: rgba(26, 25, 25, 0.767);
 }

@@ -26,7 +26,7 @@ function Projects(){
                     <img id="project-img" src={ecomImg} alt="Osrs Project" />
                 </div>
                 {/* txt */}
-                <div className="col-12 col-sm-6 mt-5"  id="project-card">
+                <div className="col-12 col-sm-6 my-3"  id="project-card">
                     <h1>Ecommerce Store</h1>
                     <ul className="list-inline">
                         <li className="list-inline-item project-icon"><DiPython /></li>
@@ -35,10 +35,10 @@ function Projects(){
                     </ul>
                     <ul className="list-inline">
                         <li className="list-inline-item">
-                            <a className="btn btn-primary" onClick={() => openInNewTab("https://flask-setup.onrender.com")}>Live Site</a>
+                            <a href="https://flask-setup.onrender.com" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Site</a>
                         </li>
                         <li className="list-inline-item">
-                            <a className="btn btn-primary" onClick={() => openInNewTab("https://github.com/JuanTGit/flask_setup")}>GitHub</a>
+                            <a href="https://github.com/JuanTGit/flask_setup" className="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +51,7 @@ function Projects(){
                     <img id="project-img" src={osrsImg} alt="Ecom Project" />
                 </div>
                 {/* txt */}
-                <div className="col-12 col-sm-6 mt-5" id="project-card">
+                <div className="col-12 col-sm-6 my-3" id="project-card">
                     <h1>OSRS API</h1>
                     <ul className="list-inline">
                         <li className="list-inline-item project-icon">
@@ -63,10 +63,10 @@ function Projects(){
                     </ul>
                     <ul className="list-inline">
                         <li className="list-inline-item">
-                            <a className="btn btn-primary" onClick={() => openInNewTab("https://osrs-ge-api.onrender.com")}>Live Site</a>
+                            <a href="https://osrs-ge-api.onrender.com" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Site</a>
                         </li>
                         <li className="list-inline-item">
-                            <a className="btn btn-primary" onClick={() => openInNewTab("https://github.com/JuanTGit/osrs-ge-api")}>GitHub</a>
+                            <a href="https://github.com/JuanTGit/osrs-ge-api" className="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </li>
                     </ul>
                 </div>
