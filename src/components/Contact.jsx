@@ -1,4 +1,4 @@
-import { DiGithubBadge } from "react-icons/di";
+import { RiGithubFill } from "react-icons/ri";
 import { BiLogoLinkedinSquare, BiLogoInstagramAlt } from "react-icons/bi";
 import Form from 'react-bootstrap/Form';
 import emailjs from 'emailjs-com';
@@ -59,7 +59,7 @@ function Contact() {
                     {alert.message}
                 </Alert>
             )}
-            <h1 className="text-center">Contact Page</h1>
+            <h1 className="text-center mt-5" id="contact-title">Contact</h1>
             {/* Form */}
             <div className='form-group'>
                 <Form className='col-10 mt-1' onSubmit={handleSubmit}>
@@ -99,12 +99,10 @@ function Contact() {
                 </Form>
             </div>
             {/* Contact Links */}
-            <div className="col-10 text-center">
-                <ul className="list-inline">
-                    <li className="list-inline-item project-icon"><DiGithubBadge /></li>
-                    <li className="list-inline-item project-icon"><BiLogoInstagramAlt /></li>
-                    <li className="list-inline-item project-icon"><BiLogoLinkedinSquare /></li>
-                </ul>
+            <div className="col-12 text-center">
+                <a href="https://github.com/JuanTGit" target="_blank" rel="noopener noreferrer" className="contact-icon"><RiGithubFill /></a>
+                <a href="https://www.instagram.com/juant_ig/" target="_blank" rel="noopener noreferrer" className="contact-icon"><BiLogoInstagramAlt /></a>
+                <a href="https://www.linkedin.com/in/juan-tejeda/" target="_blank" rel="noopener noreferrer" className="contact-icon"><BiLogoLinkedinSquare /></a>
             </div>
         </div>
     );

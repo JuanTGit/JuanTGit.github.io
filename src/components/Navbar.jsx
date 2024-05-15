@@ -32,7 +32,7 @@ function AppNavbar() {
     return (
         <Navbar expand="lg" sticky='top' className={`${scrolled ? 'navbar-scrolled' : ''}`} expanded={expanded} onToggle={() => setExpanded(!expanded)}>
             <Container className='p-0'>
-                <Navbar.Brand id="custom-nav-title" href="/">Juan Tejeda</Navbar.Brand>
+                <Navbar.Brand id="custom-nav-title" href="/">JT</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto text-center">

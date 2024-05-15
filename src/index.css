@@ -30,7 +30,7 @@
   margin: 15px;
   padding: 10px;
   opacity: 0.93;
-  border: 1.7px solid #30baa3;
+  border: 2.2px solid #30baa3a2;
   vertical-align: middle;
   text-align: center;
   border-radius: 5px;
@@ -56,7 +56,7 @@
 
 body {
   background-color: hsl(0, 0%, 80%);
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-image: url('./assets/background.jpg');
   background-size: cover;       /* Cover the entire screen */
   background-position: center;  /* Center the background image */
@@ -66,21 +66,23 @@ body {
   margin: 0;                    /* Remove default margin */
 }
 
-
+#heading-swe{
+  text-decoration: underline;
+}
 /* CSS For Navbar */
 
 #custom-nav-title{
   font-size: 1.7rem;
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Montserrat';
   display: inline-block;
+  font-weight: bold;
   padding: 10px;
   font-weight: 510;
 }
 
 #custom-nav-title:hover{
   text-decoration: underline;
-  transition: background-color 0.5s, color 0.3s;
 }
 
 
@@ -143,6 +145,11 @@ body {
 }
 
 /* Contact */
+#contact-title{
+  font-weight: bold;
+  text-decoration:underline #30baa3;
+}
+
 .form-group {
   display: flex;
   justify-content: center;
@@ -155,17 +162,23 @@ body {
   width: 95%;
   margin: 2rem auto 0 auto
 }
-/* .card-icons{
-  font-size: 4.5em;
-  margin: 15px;
+
+.contact-icon {
+  display: inline-flex;
+  font-size: 4.5rem;
   padding: 10px;
-  opacity: 0.93;
-  border: 1.7px solid #30baa3;
-  vertical-align: middle;
-  text-align: center;
-  border-radius: 5px;
-  display: table;
+  border-radius: 50%;
+  transition: background-color 0.5s, color 0.3s;
+  background-color: white;
+  margin: 8px;
+  border: 2.2px solid #30baa334;
   box-shadow: 4px 5px 4px 3px #075c4223;
+  color: rgb(26, 25, 25);
+}
+
+.contact-icon:hover {
   overflow: hidden;
-  transition: all 0.4s ease 0s;
-} */
+  border: 2.2px solid #30baa3cc;
+  cursor: pointer;
+  color: #30baa3;
+}
