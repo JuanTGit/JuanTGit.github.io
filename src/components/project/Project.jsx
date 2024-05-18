@@ -1,19 +1,21 @@
 
 
 function Project(props){
-	const {projectName, projectImage, projectImageAlt, icons, liveSiteUrl, githubUrl} = props;
+	const {projectName, projectImage, projectImageAlt, projectDesc, icons, liveSiteUrl, githubUrl} = props;
 	
 	return(
 		<div>
             {/* Project */}
-            <div className="row mt-5">
+            <div className="row my-5">
                 {/* img */}
-                <div className="col-12 col-sm-6 justify-content-center d-flex">
+                <div className="col-12 col-sm-5 justify-content-center d-flex">
                     <img id="project-img" src={projectImage} alt={projectImageAlt} />
                 </div>
+                <div className="col-sm-1"></div>
                 {/* txt */}
-                <div className="col-12 col-sm-6 my-3"  id="project-card">
+                <div className="col-12 col-sm-6"  id="project-card">
                     <h1>{projectName}</h1>
+                    <p>{projectDesc}</p>
                     <ul className="list-inline">
 						{icons.map((icon, index) => (
 							<li key={index} className="list-inline-item project-icon">{icon}</li>

@@ -15,6 +15,8 @@
       margin-right: auto;
       text-align: center;
       width: 90%;
+      margin-top: 1rem;
+      margin-bottom: .5rem;
   }
   .form-btn{
     display: flex;
@@ -144,8 +146,10 @@ body {
 }
 
 #project-img{
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
+  object-fit: cover;
+  flex-grow: 0;
 }
 
 #project-card{
@@ -153,7 +157,8 @@ body {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
-  padding: 2rem;
+  padding: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .project-icon{
@@ -198,4 +203,76 @@ body {
   border: 2.2px solid #30baa3cc;
   cursor: pointer;
   color: rgba(26, 25, 25, 0.767);
+}
+
+/* Footer */
+
+#Footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  position: static;
+  
+}
+
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-txt {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-social {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+#footer-social li {
+  display: inline;
+}
+
+#social-links-footer {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+#social-links-footer:hover {
+  color: #30baa3cc;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  #container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  #footer-txt {
+      margin-bottom: 10px;
+      font-size: 12px;
+  }
+  
+  #footer-social {
+      justify-content: center;
+      gap: 10px;
+  }
+  
+  #social-links-footer {
+      font-size: 12px;
+  }
 }

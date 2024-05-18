@@ -87,7 +87,7 @@ function Contact() {
                         <Form.Label>Message</Form.Label>
                         <Form.Control
                             as="textarea"
-                            rows={4}
+                            rows={8}
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
@@ -99,7 +99,7 @@ function Contact() {
                 </Form>
             </div>
             {/* Contact Links */}
-            <div className="col-12 text-center">
+            <div className="col-12 text-center my-5">
                 <a href="https://github.com/JuanTGit" target="_blank" rel="noopener noreferrer" className="contact-icon"><RiGithubFill /></a>
                 <a href="https://www.instagram.com/juant_ig/" target="_blank" rel="noopener noreferrer" className="contact-icon"><BiLogoInstagramAlt /></a>
                 <a href="https://www.linkedin.com/in/juan-tejeda/" target="_blank" rel="noopener noreferrer" className="contact-icon"><BiLogoLinkedinSquare /></a>
