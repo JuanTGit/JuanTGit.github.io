@@ -29,6 +29,9 @@
     margin-right: auto;
     text-align: center;
   }
+  #techstack-row{
+    margin-top: 2rem;
+  }
 }
 
 .card-icons{

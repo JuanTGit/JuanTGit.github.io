@@ -63,7 +63,7 @@ function Home(){
                     <Lottie id="lottie" loop={false} animationData={animationData} />
                 </div>
                 {/* Techstack */}
-                <div className="row">
+                <div className="row" id="techstack-row">
                     <div className="col-12">
                         <h1 className="text-center">Technologies</h1>
                     </div>
