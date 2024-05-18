@@ -94,7 +94,7 @@ function Contact() {
                         />
                     </Form.Group>
                     <div className='text-end form-btn'>
-                        <button className="btn btn-primary" type="submit">Submit</button>
+                        <button className="btn btn-primary btn-lg" id="form-button" type="submit">Submit</button>
                     </div>
                 </Form>
             </div>

@@ -81,6 +81,22 @@ body {
   height: 100vh;
 }
 
+.btn-primary{
+  background-color: #30baa3 !important;
+  border-color: #30baa3 !important;
+}
+
+.btn-primary:hover{
+  background-color: #279885 !important;
+  border-color: #279885 !important;
+}
+
+.btn-primary:focus, .btn-primary.focus{
+  box-shadow: 0 0 0 0.2rem rgba(48, 186, 163, 0.5) !important;
+  outline: none !important;
+}
+
+
 #heading-swe{
   text-decoration: underline;
 }
@@ -203,6 +219,10 @@ body {
   border: 2.2px solid #30baa3cc;
   cursor: pointer;
   color: rgba(26, 25, 25, 0.767);
+}
+
+#form-button{
+  width: 100%;
 }
 
 /* Footer */
