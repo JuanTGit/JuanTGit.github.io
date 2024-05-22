@@ -4,16 +4,8 @@ import { useEffect, useState } from "react";
 import TechStack from "./about/TechStack";
 
 
-function Home(){
-    const [currentStringIndex, setCurrentStringIndex] = useState(
-        () => parseInt(localStorage.getItem('currentStringIndex')) || 0
-    );
-    const [letter, setLetter] = useState(
-        () => parseInt(localStorage.getItem('letter')) || 0
-    );
-    const [displayedTexts, setDisplayedTexts] = useState(
-        () => JSON.parse(localStorage.getItem('displayedTexts')) || ["", "", ""]
-    );
+function Home(props){
+    const {currentStringIndex, setCurrentStringIndex, letter, setLetter, displayedTexts, setDisplayedTexts} = props;
 
     const txt = ["Juan Tejeda", "Software Engineer", "Houston, TX"];
     const speed = 100;
@@ -37,13 +29,6 @@ function Home(){
         const timerId = setTimeout(typeWriter, speed);
         return () => clearTimeout(timerId);
     }, [letter, currentStringIndex, displayedTexts]);
-
-    useEffect(() => {
-        localStorage.setItem('currentStringIndex', currentStringIndex);
-        localStorage.setItem('letter', letter);
-        localStorage.setItem('displayedTexts', JSON.stringify(displayedTexts));
-    }, [currentStringIndex, letter, displayedTexts]);
-
 
     return (
         <div className="container">
