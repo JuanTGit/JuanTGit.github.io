@@ -2,42 +2,48 @@ import Lottie from "lottie-react"
 import animationData from "../assets/developer.json"
 import { useEffect, useState } from "react";
 import TechStack from "./about/TechStack";
-// const txt = ["Fully committed to the philosophy of life-long", 
-//             "learning, I’m a full stack developer with a deep passion", 
-//             "for JavaScript, React and all things web development.",
-//             "The unique combination of creativity, logic,",
-//             "technology and never running out of new things to",
-//             "discover, drives my excitement and passion for web",
-//             "development. When I’m not at my computer I like to",
-//             "spend my time reading, keeping fit and fishing."];
+
 
 function Home(){
-    const [currentStringIndex, setCurrentStringIndex] = useState(0);
-    const [letter, setLetter] = useState(0);
-    const [displayedTexts, setDisplayedTexts] = useState(["", "", ""]);
-    const txt = ["Juan Tejeda", "Software Engineer", "Houston, TX"]
+    const [currentStringIndex, setCurrentStringIndex] = useState(
+        () => parseInt(localStorage.getItem('currentStringIndex')) || 0
+    );
+    const [letter, setLetter] = useState(
+        () => parseInt(localStorage.getItem('letter')) || 0
+    );
+    const [displayedTexts, setDisplayedTexts] = useState(
+        () => JSON.parse(localStorage.getItem('displayedTexts')) || ["", "", ""]
+    );
 
+    const txt = ["Juan Tejeda", "Software Engineer", "Houston, TX"];
     const speed = 100;
 
     useEffect(() => {
         const typeWriter = () => {
             if (currentStringIndex < txt.length) {
-            const currentString = txt[currentStringIndex];
-            if (letter < currentString.length) {
-                const updatedTexts = [...displayedTexts];
-                updatedTexts[currentStringIndex] += currentString[letter];
-                setDisplayedTexts(updatedTexts);
-                setLetter(letter + 1);
-              } else {
-                setCurrentStringIndex(currentStringIndex + 1);
-                setLetter(0);
-              }
+                const currentString = txt[currentStringIndex];
+                if (letter < currentString.length) {
+                    const updatedTexts = [...displayedTexts];
+                    updatedTexts[currentStringIndex] += currentString[letter];
+                    setDisplayedTexts(updatedTexts);
+                    setLetter(letter + 1);
+                } else {
+                    setCurrentStringIndex(currentStringIndex + 1);
+                    setLetter(0);
+                }
             }
         };
 
         const timerId = setTimeout(typeWriter, speed);
         return () => clearTimeout(timerId);
     }, [letter, currentStringIndex, displayedTexts]);
+
+    useEffect(() => {
+        localStorage.setItem('currentStringIndex', currentStringIndex);
+        localStorage.setItem('letter', letter);
+        localStorage.setItem('displayedTexts', JSON.stringify(displayedTexts));
+    }, [currentStringIndex, letter, displayedTexts]);
+
 
     return (
         <div className="container">
