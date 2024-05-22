@@ -21,16 +21,16 @@ function Home(){
     useEffect(() => {
         const typeWriter = () => {
             if (currentStringIndex < txt.length) {
-                const currentString = txt[currentStringIndex];
-                if (letter < currentString.length) {
-                    const updatedTexts = [...displayedTexts];
-                    updatedTexts[currentStringIndex] += currentString[letter];
-                    setDisplayedTexts(updatedTexts);
-                    setLetter(letter + 1);
-                } else {
-                    setCurrentStringIndex(currentStringIndex + 1);
-                    setLetter(0);
-                }
+            const currentString = txt[currentStringIndex];
+            if (letter < currentString.length) {
+                const updatedTexts = [...displayedTexts];
+                updatedTexts[currentStringIndex] += currentString[letter];
+                setDisplayedTexts(updatedTexts);
+                setLetter(letter + 1);
+              } else {
+                setCurrentStringIndex(currentStringIndex + 1);
+                setLetter(0);
+              }
             }
         };
 

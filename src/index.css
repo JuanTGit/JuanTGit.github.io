@@ -1,13 +1,3 @@
-/* .card {
-  border: 1px solid hsl(0, 0%, 80%);
-  border-radius: 10%;
-  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  max-width: 250px;
-  display: inline-block;
-} */
 @media (max-width: 576px) {
   #project-card {
       display: block;
@@ -130,6 +120,9 @@ body {
   background-color: #30baa3;
   color: #fff;
   text-decoration: underline;
+}
+#custom-nav-link:focus, #custom-nav-link.focus{
+  text-decoration: underline #30baa3 4px;
 }
 
 .bg-body-tertiary {
