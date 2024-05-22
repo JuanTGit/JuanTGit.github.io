@@ -10,38 +10,26 @@ import {
   } from "react-icons/di";
   import { BiLogoFlask, BiLogoJavascript } from "react-icons/bi";
 
-function TechStack(){
+  function TechStack(){
 	return(
-		<Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-			<Col xs={4} md={2} className="card-icons">
-				<BiLogoJavascript />
-			</Col>
-			<Col xs={4} md={2} className="card-icons">
-				<DiNodejs />
-			</Col>
-			<Col xs={4} md={2} className="card-icons">
-				<DiReact />
-			</Col>
-			<Col xs={4} md={2} className="card-icons">
-				<DiHtml5 />
-			</Col>
-			<Col xs={4} md={2} className="card-icons">
-				<DiCss3 />
-			</Col>
-			<Col xs={4} md={2} className="card-icons">
-				<DiGit />
-			</Col>
-			<Col xs={4} md={2} className="card-icons">
-				<DiPostgresql />
-			</Col>
-			<Col xs={4} md={2} className="card-icons">
-				<DiPython />
-			</Col>
-			<Col xs={4} md={2} className="card-icons">
-				<BiLogoFlask />
-			</Col>
-	  	</Row>
+	  <Row style={{ justifyContent: "center", paddingBottom: "50px" }} className="card-icon-container">
+		{[
+		  <BiLogoJavascript />,
+		  <DiNodejs />,
+		  <DiReact />,
+		  <DiHtml5 />,
+		  <DiCss3 />,
+		  <DiGit />,
+		  <DiPostgresql />,
+		  <DiPython />,
+		  <BiLogoFlask />
+		].map((Icon, index) => (
+		  <Col key={index} xs={4} md={2} className="card-icons" style={{ '--i': index }}>
+			{Icon}
+		  </Col>
+		))}
+	  </Row>
 	)
-}
-
+  }
+  
 export default TechStack
