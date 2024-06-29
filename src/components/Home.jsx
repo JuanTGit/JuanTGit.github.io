@@ -7,7 +7,7 @@ import TechStack from "./about/TechStack";
 function Home(props){
     const {currentStringIndex, setCurrentStringIndex, letter, setLetter, displayedTexts, setDisplayedTexts} = props;
 
-    const txt = ["Juan Tejeda", "Software Engineer", "Houston, TX"];
+    const txt = ["Juan Tejeda", "Software Engineer | Fullstack Web Developer", "Houston, TX"];
     const speed = 100;
 
     useEffect(() => {
@@ -38,11 +38,11 @@ function Home(props){
                     {displayedTexts.map((text, index) => {
                         switch (index) {
                         case 0:
-                            return <h1 id="heading-swe" key={index}>{text}</h1>;
+                            return <h1 className="mb-3" id="heading-swe" key={index}>{text}</h1>;
                         case 1:
                             return <h2 key={index}>{text}</h2>;
                         case 2:
-                            return <h5 key={index}>{text}</h5>;
+                            return <h4 key={index}>{text}</h4>;
                         default:
                             return null;
                         }
