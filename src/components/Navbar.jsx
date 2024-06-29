@@ -33,7 +33,7 @@ function AppNavbar() {
         <Navbar expand="lg" sticky='top' className={`${scrolled ? 'navbar-scrolled' : ''}`} expanded={expanded} onToggle={() => setExpanded(!expanded)}>
             <Container className='p-0'>
                 <Navbar.Brand id="custom-nav-title" href="/">JT</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle className="mx-3" aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto text-center">
                         <Nav.Link className="mx-2" id="custom-nav-link" onClick={closeNavbar} href="#/"><BsHouseDoor style={{ marginBottom: "4px", marginRight: "4px" }} />Home</Nav.Link>
