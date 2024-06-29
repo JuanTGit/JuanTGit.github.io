@@ -8,7 +8,7 @@ function Home(props){
     const {currentStringIndex, setCurrentStringIndex, letter, setLetter, displayedTexts, setDisplayedTexts} = props;
 
     const txt = ["Juan Tejeda", "Software Engineer | Fullstack Web Developer", "Houston, TX"];
-    const speed = 100;
+    const speed = 50;
 
     useEffect(() => {
         const typeWriter = () => {
