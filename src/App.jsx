@@ -1,6 +1,6 @@
 import AppNavbar from "./components/Navbar"
 import Footer from "./components/Footer"
-import { HashRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./components/Home"
 import Resume from "./components/Resume"
 import Projects from "./components/Projects"
@@ -15,8 +15,8 @@ function App() {
 
   return(
     <>
-      <AppNavbar />
       <Router>
+      <AppNavbar />
           <Routes>
               <Route path="/" element={<Home 
                                         currentStringIndex={currentStringIndex}
