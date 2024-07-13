@@ -286,6 +286,7 @@ body {
   color: #30baa3cc;
 }
 
+
 /* Responsive design for smaller screens */
 @media (max-width: 600px) {
   #container {
