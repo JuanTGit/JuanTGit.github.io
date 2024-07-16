@@ -37,7 +37,7 @@ function Projects(){
                 projectImageAlt="Ecommerce Project"
                 projectDesc="This project sets up a Flask web application with Flask for the backend, Jinja2 for templating, and SQLAlchemy for database management. It includes user authentication, Blueprints for modular code, and configurations for easy deployment."
                 icons={projectOneIcons}
-                liveSiteUrl="portfolio-store-backend.vercel.app"
+                liveSiteUrl="https://portfolio-store-backend.vercel.app/"
                 githubUrl="https://github.com/JuanTGit/flask_setup"
             />
 
@@ -48,7 +48,7 @@ function Projects(){
                 projectImageAlt="OSRS API Project"
                 projectDesc="This API accesses Old School RuneScape's Grand Exchange data. Built with Node.js, it uses Express for the server and Axios for HTTP requests, providing real-time pricing information for in-game items."
                 icons={projectTwoIcons}
-                liveSiteUrl="osrs-ge-api.vercel.app"
+                liveSiteUrl="https://osrs-ge-api.vercel.app/"
                 githubUrl="https://github.com/JuanTGit/osrs-ge-api"
             />
 
