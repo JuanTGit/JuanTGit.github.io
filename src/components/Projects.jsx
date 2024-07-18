@@ -25,7 +25,7 @@ function Projects(){
     ]
 
     const projectOneIcons = [icons.slice(0,3), icons[5], icons[6]]
-    const projectTwoIcons = [icons[3], icons[5]]
+    const projectTwoIcons = [icons[3], icons[5], icons[7]]
 
     return(
         <div className="container">
@@ -36,8 +36,8 @@ function Projects(){
                 projectImage={ecomImg}
                 projectImageAlt="Ecommerce Project"
                 projectDesc="This project sets up a Flask web application with Flask for the backend, Jinja2 for templating, and SQLAlchemy for database management. It includes user authentication, Blueprints for modular code, and configurations for easy deployment."
-                icons={projectOneIcons}
-                liveSiteUrl="https://portfolio-store-backend.vercel.app/"
+                icons={icons}
+                liveSiteUrl="https://ecommerce-portfolio-jt.vercel.app/"
                 githubUrl="https://github.com/JuanTGit/flask_setup"
             />
 
