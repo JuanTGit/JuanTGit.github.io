@@ -8,7 +8,7 @@ function Project(props){
             {/* Project */}
             <div className="row my-5">
                 {/* img */}
-                <div className="col-12 col-sm-5 justify-content-center d-flex">
+                <div className="col-12 col-sm-5">
                     <img id="project-img" src={projectImage} alt={projectImageAlt} />
                 </div>
                 <div className="col-sm-1"></div>
@@ -21,14 +21,21 @@ function Project(props){
 							<li key={index} className="list-inline-item project-icon">{icon}</li>
 						))}
                     </ul>
-                    <ul className="list-inline">
-                        <li className="list-inline-item">
-                            <a href={liveSiteUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Site</a>
-                        </li>
+                    {liveSiteUrl ? (
+                        <ul className="list-inline">
+                            <li className="list-inline-item">
+                                <a href={liveSiteUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Site</a>
+                            </li>
+                            <li className="list-inline-item">
+                                <a href={githubUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </li>
+                        </ul>
+                    ): (
                         <li className="list-inline-item">
                             <a href={githubUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </li>
-                    </ul>
+                    ) }
+
                 </div>
 			</div>
 		</div>

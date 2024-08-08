@@ -55,7 +55,7 @@
 }
 
 .card-icons:hover {
-  transform: scale(1.05);
+  transform: scale(1.10);
   overflow: hidden;
   border: 2.2px solid #30baa3;
 }
@@ -100,9 +100,9 @@ body {
 
 
 #heading-swe{
-  /* text-decoration: underline; */
   font-size: 60px;
 }
+
 /* CSS For Navbar */
 
 #custom-nav-title{
