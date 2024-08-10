@@ -177,6 +177,11 @@ body {
   height: auto;
   object-fit: cover;
   flex-grow: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+#project-img:hover {
+  transform: scale(1.40);
 }
 
 #project-card{
@@ -190,8 +195,13 @@ body {
 
 .project-icon{
   font-size: 2.5em;
-  
+  /* transition: transform 0.1s ease-in-out; */
 }
+
+.project-icon:hover {
+  transform: scale(1.25);
+}
+
 
 /* Contact */
 #contact-title{
