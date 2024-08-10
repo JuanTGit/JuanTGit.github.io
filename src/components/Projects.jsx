@@ -51,6 +51,7 @@ function Projects(){
                 projectImageAlt="Discord Bot Project"
                 projectDesc="This Valorant stats tracker is a Discord bot built with Node.js and JavaScript. It fetches and displays player statistics using the Valorant API, featuring a user-friendly interface, real-time data updates, responsive design, and is hosted on Heroku."
                 icons={valorantBotIcons}
+                addBot="https://discord.com/oauth2/authorize?client_id=1270879010267594842"
                 githubUrl="https://github.com/JuanTGit/valorant-tracker"
             />
 

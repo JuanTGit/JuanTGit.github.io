@@ -1,7 +1,7 @@
 
 
 function Project(props){
-	const {projectName, projectImage, projectImageAlt, projectDesc, icons, liveSiteUrl, githubUrl} = props;
+	const {projectName, projectImage, projectImageAlt, projectDesc, icons, liveSiteUrl, githubUrl, addBot} = props;
 	
 	return(
 		<div>
@@ -31,9 +31,14 @@ function Project(props){
                             </li>
                         </ul>
                     ): (
-                        <li className="list-inline-item">
-                            <a href={githubUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        </li>
+                        <ul className="list-inline">
+                            <li className="list-inline-item">
+                                <a href={addBot} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Add Bot</a>
+                            </li>
+                            <li className="list-inline-item">
+                                <a href={githubUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </li>
+                        </ul>
                     ) }
 
                 </div>
