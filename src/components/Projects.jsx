@@ -27,7 +27,7 @@ function Projects(){
         <DiNodejsSmall key="Node"/>
     ]
 
-    const valorantBotIcons = [icons[3], icons[7], icons[8]]
+    const valorantBotIcons = [icons[3], icons[7], icons[8], icons[2]]
     const projectTwoIcons = [icons[3], icons[5], icons[7]]
 
     return(
