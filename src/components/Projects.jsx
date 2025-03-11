@@ -2,6 +2,7 @@ import osrsImg from "../assets/osrs-api.png"
 import ecomImg from "../assets/ecommerce.png"
 import portfolio from "../assets/portfolio.png"
 import trackerImg from "../assets/val-tracker.png"
+import osrsDropSim from "../assets/drop-sim.png"
 import {
 	DiReact,
 	DiPython,
@@ -42,6 +43,16 @@ function Projects(){
                 icons={icons.slice(0,8)}
                 liveSiteUrl="https://ecommerce-portfolio-jt.vercel.app/"
                 githubUrl="https://github.com/JuanTGit/flask_setup"
+            />
+
+            <Project 
+                projectName="OSRS Drop Simulator"
+                projectImage={osrsDropSim}
+                projectImageAlt="Ecommerce Project"
+                projectDesc="This project showcases object-oriented programming (OOP) in Python through a Drop Table system, efficiently managing item drops, probabilities, and rewards. It demonstrates clean, modular code design and algorithmic problem-solving—key skills for scalable software development."
+                icons={icons.slice(0,8)}
+                liveSiteUrl="https://drop-simulator.vercel.app/"
+                githubUrl="https://github.com/JuanTGit/OOP/tree/main/drop-table"
             />
 
             {/* Valorant Tracker Project */}
