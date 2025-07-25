@@ -8,13 +8,14 @@ import {
 	DiCss3,
 	DiPostgresql
   } from "react-icons/di";
-  import { BiLogoFlask, BiLogoJavascript } from "react-icons/bi";
+  import { BiLogoFlask, BiLogoJavascript, BiLogoTypescript  } from "react-icons/bi";
 
   function TechStack(){
 	return(
 	  <Row style={{ justifyContent: "center", paddingBottom: "50px" }} className="card-icon-container">
 		{[
 		  <BiLogoJavascript />,
+		  <BiLogoTypescript />,
 		  <DiNodejs />,
 		  <DiReact />,
 		  <DiHtml5 />,
